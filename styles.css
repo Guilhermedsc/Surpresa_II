@@ -1,0 +1,139 @@
+/* Estilo geral */
+body {
+    font-family: "Arial", sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
+    color: #333;
+}
+
+header {
+    text-align: center;
+    padding: 30px 20px;
+    background: #fff;
+    border-bottom: 5px solid #ff758f;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #ff3860;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #555;
+    margin: 10px 0 0;
+}
+
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.controls {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.control-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+select,
+button {
+    padding: 10px 15px;
+    font-size: 1rem;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    line-height: 1.5;
+    box-sizing: border-box;
+}
+
+select {
+    background: #ffe0e6;
+    color: #333;
+    border: 2px solid #ff758f;
+}
+
+button {
+    background: #ff4d6d;
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background: #ff758f;
+}
+
+.cantadas-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.cantada {
+    flex: 1 1 calc(100% - 40px);
+    max-width: 400px;
+    background: linear-gradient(135deg, #fce4ec, #f8bbd0);
+    border: 2px solid #ff758f;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.cantada:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.cantada h3 {
+    font-size: 2.5rem;
+    color: #ff3860;
+    margin-bottom: 10px;
+}
+
+.cantada p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.cantada small {
+    display: block;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #fff;
+    color: #555;
+    border-top: 5px solid #ff758f;
+}
+
+@media (max-width: 552px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+}
